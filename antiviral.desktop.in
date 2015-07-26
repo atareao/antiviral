@@ -1,0 +1,30 @@
+[Desktop Entry]
+_Name = Antiviral
+_Comment = Antiviral
+_GenericName = Antiviral
+Exec = /opt/extras.ubuntu.com/antiviral/bin/antiviral
+Icon = /opt/extras.ubuntu.com/antiviral/share/pixmaps/antiviral.svg
+Type = Application
+Terminal = false
+StartupNotify = true
+Encoding = UTF-8
+Categories = Utility;
+$Name[es] = _('Antiviral')
+$Comment[es] = _('Antiviral')
+$GenericName[es] = _('Antiviral')
+$Name[de] = _('Antiviral')
+$Name[ru] = _('Antiviral')
+$Name[ms] = _('Antiviral')
+$Name[hu] = _('Antiviral')
+$Name[fr] = _('Antiviral')
+$Comment[de] = _('Antiviral')
+$Comment[ru] = _('Antiviral')
+$Comment[ms] = _('Antiviral')
+$Comment[hu] = _('Antiviral')
+$Comment[fr] = _('Antiviral')
+$GenericName[de] = _('Antiviral')
+$GenericName[ru] = _('Antiviral')
+$GenericName[ms] = _('Antiviral')
+$GenericName[hu] = _('Antiviral')
+$GenericName[fr] = _('Antiviral')
+

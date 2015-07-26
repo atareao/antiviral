@@ -1,0 +1,65 @@
+antiviral (0.0.5-0extras14.04.2) trusty; urgency=low
+
+  * Fixed a bug
+
+ -- Lorenzo Carbonell <atareao@trusty>  Sun, 09 Mar 2014 19:54:09 +0100
+
+antiviral (0.0.5-0extras14.04.2) trusty; urgency=medium
+
+  * Executable
+
+ -- Lorenzo Carbonell <atareao@trusty>  Mon, 24 Feb 2014 02:49:19 +0100
+
+antiviral (0.0.5-0extras14.04.1) trusty; urgency=medium
+
+  * Executable
+
+ -- Lorenzo Carbonell <atareao@trusty>  Sat, 22 Feb 2014 09:06:26 +0100
+
+antiviral (0.0.5-0extras14.04.0) trusty; urgency=low
+
+  * Fixed some bugs
+
+ -- Lorenzo Carbonell <atareao@trusty>  Sat, 22 Feb 2014 07:52:36 +0100
+
+antiviral (0.0.4-0extras13.10.2) saucy; urgency=low
+
+  * Fixed some bugs
+
+ -- Lorenzo <atareao_s@saucy>  Sun, 10 Nov 2013 15:32:34 +0100
+
+antiviral (0.0.4-0extras13.10.0) saucy; urgency=low
+
+  * Added nautilus-extension
+
+ -- Lorenzo <atareao_s@saucy>  Sun, 10 Nov 2013 09:23:03 +0100
+
+antiviral (0.0.3-0extras13.04.4) raring; urgency=low
+
+  * Fixed clamav-daemon dependecies
+  * Fixed importing sys
+  * Migrated to Python 3
+  * Using PyClamd
+  * Fixed dependencies
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Wed, 29 May 2013 22:53:02 +0200
+
+antiviral (0.0.2.1-1ubuntu1) precise; urgency=low
+
+  * Fixed a bug with launcher
+  * Fixed a bug with dependencies
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 05 Aug 2012 22:06:16 +0200
+
+antiviral (0.0.2.0-1ubuntu1) precise; urgency=low
+
+  * Antiviral ported to PyGObject
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 05 Aug 2012 21:16:02 +0200
+
+antiviral (0.0.1.0-1ubuntu1) Maverick; urgency=low
+
+  * First version
+
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 21 Nov 2010 21:21:20 +0100
+

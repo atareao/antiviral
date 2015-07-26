@@ -1,0 +1,3 @@
+#!/bin/bash
+freshclam
+/etc/init.d/clamav-daemon start

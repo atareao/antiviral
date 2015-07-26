@@ -1,0 +1,16 @@
+1f25296c9510b0db8bcb5a785501cd71  usr/share/pixmaps/antiviral.svg
+9ba64af65dd3f7540884e60d62f97e24  usr/share/antiviral/acciones.py
+bea6a699a0bfdbdf8357907eecbd781e  usr/share/antiviral/progreso.glade
+57fc413abe6cafb672162d452447fc09  usr/share/antiviral/antiviral.py
+bf135e5b6f9baa5cb25bbf71cf932249  usr/share/antiviral/acciones.glade
+d1a5f3dbb65756d8e69e40c41eae3565  usr/share/antiviral/antiviral.glade
+d47f93888c8e8368ab5015dc51dbdaf2  usr/share/antiviral/Infectado.py
+1f25296c9510b0db8bcb5a785501cd71  usr/share/antiviral/antiviral.svg
+6dd260e067ecba4e0d77e7a59b245e0c  usr/share/antiviral/Progreso.py
+30084e62fbff89ce8af5ac5d88363218  usr/share/antiviral/Directorio.py
+94a81d733bb5e79e5c39cb5197d0ed5d  usr/share/applications/Antiviral.desktop
+c1f8f1c57ef822e567cafa2d72857784  usr/share/doc/antiviral/changelog.Debian.gz
+b26bcbaa887fb86a13925a9c167b0a8b  usr/share/doc/antiviral/copyright
+977b67c1249d05e9caba825bbf390e52  usr/share/locale/en/LC_MESSAGES/antiviral.mo
+580bf4605efb9c1140e4b7431099c7d9  usr/share/locale/de/LC_MESSAGES/antiviral.mo
+a1dfda59b57794892d9a8897ecbfdb6f  usr/share/locale/es/LC_MESSAGES/antiviral.mo
