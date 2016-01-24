@@ -339,13 +339,16 @@ class Antiviral(Gtk.Dialog):
 			print(self.scanner.reload())
 		
 	def get_files(self,files,folder,recursive):
-		for a_file in os.listdir(folder):
-			a_file=os.path.join(folder,a_file)
-			if os.path.isfile(a_file):
-				files.append(a_file)
-			elif os.path.isdir(a_file):
-				if recursive==True:
-					self.get_files(files,a_file,True)				
+		try:
+			for a_file in os.listdir(folder):
+				a_file=os.path.join(folder,a_file)
+				if os.path.isfile(a_file):
+					files.append(a_file)
+				elif os.path.isdir(a_file):
+					if recursive==True:
+						self.get_files(files,a_file,True)
+		except Exception as e:
+			print(e)
 	
 	def scan_files(self,files):
 		infectados=[]
