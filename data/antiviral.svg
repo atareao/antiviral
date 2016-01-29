@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="499.99747"
-   height="499.9975"
+   width="64"
+   height="64"
    id="svg3145"
    version="1.1"
-   inkscape:version="0.48.0 r9654"
-   sodipodi:docname="Nuevo documento 6">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="antiviral.svg">
   <defs
      id="defs3147">
     <linearGradient
@@ -60,7 +60,7 @@
        fx="476.3345"
        fy="526.45355"
        r="119.37046"
-       gradientTransform="matrix(3.986377,-0.97488124,0.17190548,0.70293683,-1412.851,951.53088)"
+       gradientTransform="matrix(0.486231,-0.11890935,0.02096785,0.08573943,17.821827,1107.5349)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -71,7 +71,7 @@
        fx="264.08838"
        fy="566.22626"
        r="130.56676"
-       gradientTransform="matrix(15.055667,-3.2365865,0.53576448,2.4922206,-3911.0164,338.38188)"
+       gradientTransform="matrix(1.8363873,-0.39477668,0.06534889,0.30398402,-286.8873,1032.7472)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -125,9 +125,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="147.0846"
-     inkscape:cy="324.58546"
+     inkscape:zoom="5.6"
+     inkscape:cx="45.505828"
+     inkscape:cy="29.169433"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -136,9 +136,9 @@
      fit-margin-right="20.44"
      fit-margin-bottom="134.28"
      inkscape:window-width="1280"
-     inkscape:window-height="995"
+     inkscape:window-height="1003"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="21"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata3150">
@@ -156,40 +156,42 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-217.37897,-631.845)">
-    <path
-       style="fill:url(#radialGradient4077);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 460.73459,793.32901 c 23.38248,25.5015 24.77419,49.72761 30.47969,78.31889 6.29176,31.52915 9.19235,50.7288 4.41569,93.51015 -0.25148,2.25233 152.01288,-34.22444 152.01288,-34.22444 0,0 69.69561,-21.92814 42.5,-105 -23.01,-70.28648 -89.28571,-58.57143 -89.28571,-58.57143 0,0 -141.65274,24.29797 -140.12255,25.96683 z"
-       id="path3289"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ssscscs" />
-    <path
-       style="fill:url(#radialGradient4087);fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 458.84925,792.51975 c 0,0 22.44872,10.55591 33.33504,75.25637 11.58243,68.83767 3.53553,97.9848 3.53553,97.9848 0,0 -158.08887,31.31473 -160.61426,31.31473 -2.52538,0 -79.63993,-4.22039 -93.4391,-63.13454 -19.89122,-84.92347 55.05331,-107.07617 55.05331,-107.07617 z"
-       id="path4079"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cscsscc" />
-    <path
-       sodipodi:type="arc"
-       style="fill:#0261a3;fill-opacity:1;stroke:none"
-       id="path4091"
-       sodipodi:cx="261.78571"
-       sodipodi:cy="575.57648"
-       sodipodi:rx="71.071434"
-       sodipodi:ry="34.642857"
-       d="m 332.85714,575.57648 c 0,19.13272 -31.81977,34.64285 -71.07143,34.64285 -39.25167,0 -71.07144,-15.51013 -71.07144,-34.64285 0,-19.13272 31.81977,-34.64286 71.07144,-34.64286 39.25166,0 71.07143,15.51014 71.07143,34.64286 z"
-       transform="matrix(0.98480775,-0.17364818,0.17364818,0.98480775,36.172164,374.9172)" />
-    <text
-       xml:space="preserve"
-       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu Bold"
-       x="173.32497"
-       y="961.98401"
-       id="text4095"
-       sodipodi:linespacing="125%"
-       transform="matrix(0.98480775,-0.17364818,0.17364818,0.98480775,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan4097"
-         x="173.32497"
-         y="961.98401">Antiviral</tspan></text>
+     transform="translate(-217.37897,-1067.8425)">
+    <g
+       id="g3527"
+       transform="translate(2.2204285,0.80644575)">
+      <path
+         sodipodi:nodetypes="ssscscs"
+         inkscape:connector-curvature="0"
+         id="path3289"
+         d="m 246.34898,1088.2385 c 2.85204,3.1105 3.02179,6.0654 3.7177,9.5528 0.76743,3.8457 1.12122,6.1875 0.5386,11.4057 -0.0307,0.2747 18.54149,-4.1744 18.54149,-4.1744 0,0 8.501,-2.6747 5.18386,-12.8072 -2.8066,-8.5731 -10.89046,-7.1442 -10.89046,-7.1442 0,0 -17.27783,2.9637 -17.09119,3.1673 z"
+         style="fill:url(#radialGradient4077);fill-opacity:1;stroke:#000000;stroke-width:0.12197316px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cscsscc"
+         inkscape:connector-curvature="0"
+         id="path4079"
+         d="m 246.11902,1088.1398 c 0,0 2.73814,1.2875 4.06598,9.1792 1.41275,8.3964 0.43124,11.9516 0.43124,11.9516 0,0 -19.2826,3.8195 -19.59063,3.8195 -0.30803,0 -9.71393,-0.5148 -11.39706,-7.7007 -2.4262,-10.3584 6.71503,-13.0604 6.71503,-13.0604 z"
+         style="fill:url(#radialGradient4087);fill-opacity:1;stroke:#000000;stroke-width:0.12197316px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <ellipse
+         ry="4.2254987"
+         rx="8.668807"
+         cy="1125.4365"
+         cx="43.430237"
+         transform="matrix(0.98480775,-0.17364818,0.17364818,0.98480775,0,0)"
+         id="path4091"
+         style="fill:#0261a3;fill-opacity:1;stroke:none" />
+      <text
+         transform="matrix(0.98480775,-0.17364818,0.17364818,0.98480775,0,0)"
+         sodipodi:linespacing="125%"
+         id="text4095"
+         y="1126.7666"
+         x="36.236298"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.41524839px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none"
+         xml:space="preserve"><tspan
+           y="1126.7666"
+           x="36.236298"
+           id="tspan4097"
+           sodipodi:role="line">Antiviral</tspan></text>
+    </g>
   </g>
 </svg>

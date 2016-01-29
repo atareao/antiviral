@@ -23,6 +23,7 @@
 import gi  
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
+from gi.repository import GdkPixbuf
 import os
 import pyclamd
 import subprocess
@@ -275,7 +276,7 @@ class Antiviral(Gtk.Dialog):
 		ad=Gtk.AboutDialog()
 		ad.set_name(comun.APPNAME)
 		ad.set_version(comun.VERSION)
-		ad.set_copyright('Copyrignt (c) 2010 - 2013\nLorenzo Carbonell')
+		ad.set_copyright('Copyrignt (c) 2010 - 2016\nLorenzo Carbonell')
 		ad.set_comments(_('A graphical interface for\nClamAV'))
 		ad.set_license(_('This program is free software: you can redistribute it and/or modify it\n\
 		under the terms of the GNU General Public License as published by the\n\
@@ -287,6 +288,8 @@ class Antiviral(Gtk.Dialog):
 		more details.\n\n\
 		You should have received a copy of the GNU General Public License along with\n\
 		this program.  If not, see <http://www.gnu.org/licenses/>.'))		
+		ad.set_logo(GdkPixbuf.Pixbuf.new_from_file(comun.ICON))
+		ad.set_icon(GdkPixbuf.Pixbuf.new_from_file(comun.ICON))		
 		ad.set_website('http://www.atareao.es')
 		ad.set_website_label('http://www.atareao.es')
 		ad.set_authors(['Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>'])
