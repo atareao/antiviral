@@ -1,9 +1,10 @@
-antiviral (0.0.6-0extras15.10.1) wily; urgency=medium
+antiviral (0.0.6-0extras15.10.2) wily; urgency=medium
 
   * Upgraded to Wily
   * Permissions to read
+  * Updated about
 
- -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 24 Jan 2016 11:16:46 +0100
+ -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Fri, 29 Jan 2016 18:02:48 +0100
 
 antiviral (0.0.5-0extras14.04.2) trusty; urgency=low
 
