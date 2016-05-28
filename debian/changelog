@@ -1,4 +1,4 @@
-antiviral (0.0.7-0extras16.04.0) xenial; urgency=medium
+antiviral (0.0.8-0extras16.04.0) xenial; urgency=medium
 
   * Updated pyclamd
   * Using threads for scanning
@@ -77,4 +77,3 @@ antiviral (0.0.1.0-1ubuntu1) Maverick; urgency=low
   * First version
 
  -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sun, 21 Nov 2010 21:21:20 +0100
-

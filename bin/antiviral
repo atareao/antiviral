@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 #
-__author__='Lorenzo Carbonell'
-__date__ ='$05/08/2012'
 #
 #
 # Copyright (C) 2012 Lorenzo Carbonell
@@ -26,16 +24,22 @@ __date__ ='$05/08/2012'
 import os
 import sys
 import gi
-gi.require_version('Gtk', '3.0')
+try:
+    gi.require_version('Gtk', '3.0')
+except Exception as e:
+    print(e)
+    exit(1)
 from gi.repository import Gtk
 
 
 if __name__ == '__main__':
-	if __file__.startswith('/opt/extras.ubuntu.com/antiviral') or os.getcwd().startswith('/opt/extras.ubuntu.com/antiviral'):
-		sys.path.insert(1, '/opt/extras.ubuntu.com/antiviral/share/antiviral')
-	else:
-		sys.path.insert(1,os.path.normpath(os.path.join(os.getcwd(), '../src')))
-	from antiviral import Antiviral
-	av=Antiviral()
-	Gtk.main()
+    if __file__.startswith('/opt/extras.ubuntu.com/antiviral') or\
+             os.getcwd().startswith('/opt/extras.ubuntu.com/antiviral'):
+        sys.path.insert(1, '/opt/extras.ubuntu.com/antiviral/share/antiviral')
+    else:
+        sys.path.insert(1, os.path.normpath(
+            os.path.join(os.getcwd(), '../src')))
+    from antiviral import Antiviral
+    av = Antiviral()
+    Gtk.main()
 exit(0)
