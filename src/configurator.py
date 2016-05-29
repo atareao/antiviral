@@ -26,50 +26,50 @@ import json
 
 import comun
 
+
 class Configuration(object):
-	def __init__(self):
-		self.params = comun.PARAMS
-		self.read()
-	
-	def get(self,key):
-		try:
-			return self.params[key]
-		except KeyError as e:
-			print(e)
-			self.params[key] = comun.PARAMS[key]
-			return self.params[key]
-		
-	def set(self,key,value):
-		self.params[key] = value
+    def __init__(self):
+        self.params = comun.PARAMS
+        self.read()
 
-	def reset(self):
-		if os.path.exists(comun.CONFIG_FILE):
-			os.remove(comun.CONFIG_FILE)		
-		self.params = comun.PARAMS
-		self.save()
+    def get(self, key):
+        try:
+            return self.params[key]
+        except KeyError as e:
+            print(e)
+            self.params[key] = comun.PARAMS[key]
+            return self.params[key]
 
-	def set_defaults(self):
-		self.params = comun.PARAMS
-		self.save()
-	
-	def read(self):		
-		try:
-			f=codecs.open(comun.CONFIG_FILE,'r','utf-8')
-		except IOError as e:
-			print(e)
-			self.save()
-			f=codecs.open(comun.CONFIG_FILE,'r','utf-8')
-		try:
-			self.params = json.loads(f.read())
-		except ValueError as e:
-			print(e)
-			self.save()
-		f.close()
+    def set(self, key, value):
+        self.params[key] = value
 
-	def save(self):
-		if not os.path.exists(comun.CONFIG_APP_DIR):
-			os.makedirs(comun.CONFIG_APP_DIR)
-		f=codecs.open(comun.CONFIG_FILE,'w','utf-8')
-		#f.write(json.dumps(self.params,encoding ='utf-8'))
-		f.write(json.dumps(self.params))
-		f.close()
+    def reset(self):
+        if os.path.exists(comun.CONFIG_FILE):
+            os.remove(comun.CONFIG_FILE)
+        self.params = comun.PARAMS
+        self.save()
+
+    def set_defaults(self):
+        self.params = comun.PARAMS
+        self.save()
+
+    def read(self):
+        try:
+            f = codecs.open(comun.CONFIG_FILE, 'r', 'utf-8')
+        except IOError as e:
+            print(e)
+            self.save()
+            f = codecs.open(comun.CONFIG_FILE, 'r', 'utf-8')
+        try:
+            self.params = json.loads(f.read())
+        except ValueError as e:
+            print(e)
+            self.save()
+        f.close()
+
+    def save(self):
+        if not os.path.exists(comun.CONFIG_APP_DIR):
+            os.makedirs(comun.CONFIG_APP_DIR)
+        f = codecs.open(comun.CONFIG_FILE, 'w', 'utf-8')
+        f.write(json.dumps(self.params))
+        f.close()

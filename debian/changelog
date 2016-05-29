@@ -1,7 +1,9 @@
-antiviral (0.0.8-0extras16.04.1) xenial; urgency=medium
+antiviral (0.0.9-0extras16.04.0) xenial; urgency=medium
 
   * Updated pyclamd
   * Using threads for scanning
+  * Window vs Dialog
+  * Updated interface
 
  -- Lorenzo Carbonell <lorenzo.carbonell.cerezo@gmail.com>  Sat, 28 May 2016 19:31:54 +0200
 

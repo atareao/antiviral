@@ -41,6 +41,7 @@ class Progreso(Gtk.Dialog):
         self.set_size_request(330, 30)
         self.set_resizable(False)
         self.connect('destroy', self.close)
+        # self.set_modal(True)
         vbox = Gtk.VBox(spacing=5)
         vbox.set_border_width(5)
         self.get_content_area().add(vbox)
