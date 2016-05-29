@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: lorenzo.carbonell.cerezo@gmail.com\n"
-"POT-Creation-Date: 2013-05-27 01:42+0200\n"
+"POT-Creation-Date: 2016-05-29 22:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,158 +17,167 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/actions.py:66
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:76
 msgid "Del."
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/actions.py:71
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:81
 msgid "Qua."
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/actions.py:75
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:85
 msgid "File"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/actions.py:77
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:87
 msgid "Virus"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/actions.py:84
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:94
 msgid "Execute"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/actions.py:131
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:144
 msgid "There is a file like this in quarentine, remove this new file?"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:66
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:117
-msgid "Scan"
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:184
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:478
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:565
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:12
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:13
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:14
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:15
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:16
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:17
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:18
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:19
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:20
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:21
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:22
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:23
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:24
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:25
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:26
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:27
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:28
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:29
+msgid "Antiviral"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:73
-msgid "Exit"
-msgstr ""
-
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:80
-msgid "About"
-msgstr ""
-
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:87
-msgid "Update virus database"
-msgstr ""
-
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:98
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:216
 msgid "ClamAV version"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:122
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:231
+msgid "Scan home"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:233
+msgid "Scan home now"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:238
+msgid "Scan folders"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:240
+msgid "Scan selected folders now"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:245
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:247
+msgid "Exit"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:252
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:254
+msgid "About"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:259
+msgid "Update"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:261
+msgid "Update virus database"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:277
+msgid "Scan"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:282
 msgid "Rec."
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:126
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:287
 msgid "Folder"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:134
-msgid "Add"
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:295
+msgid "Add new folder"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:140
-msgid "Remove"
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:302
+msgid "Remove selected folder"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:146
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:309
 msgid "Remove all folders"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:193
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:371
 msgid "Select Folder..."
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:240
-msgid "What a pity!, In this machine there are viruses!"
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:413
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:426
+msgid "Processing folders..."
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:249
-msgid "Congratulations!!, no viruses found"
-msgstr ""
-
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:263
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:456
 msgid ""
 "A graphical interface for\n"
 "ClamAV"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:264
-msgid ""
-"This program is free software: you can redistribute it and/or modify it\n"
-"\t\tunder the terms of the GNU General Public License as published by the\n"
-"\t\tFree Software Foundation, either version 3 of the License, or (at your "
-"option)\n"
-"\t\tany later version.\n"
-"\n"
-"\t\tThis program is distributed in the hope that it will be useful, but\n"
-"\t\tWITHOUT ANY WARRANTY; without even the implied warranty of "
-"MERCHANTABILITY\n"
-"\t\tor FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License "
-"for\n"
-"\t\tmore details.\n"
-"\n"
-"\t\tYou should have received a copy of the GNU General Public License along "
-"with\n"
-"\t\tthis program.  If not, see <http://www.gnu.org/licenses/>."
-msgstr ""
-
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:296
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:492
 msgid "main is up to date\n"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:298
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:494
 msgid "main updated\n"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:301
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:497
 msgid "daily is up to date\n"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:303
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:499
 msgid "daily updated\n"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:306
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:502
 msgid "bytecode is up to date\n"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:308
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:504
 msgid "bytecode updated\n"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:318
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:514
 msgid "Reloading"
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/src/antiviral.py:337
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:545
 msgid "Scanning..."
 msgstr ""
 
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:12
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:13
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:14
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:15
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:16
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:17
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:18
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:19
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:20
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:21
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:22
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:23
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:24
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:25
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:26
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:27
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:28
-#: /home/atareao/Dropbox/tp/raring/antiviral/antiviral.desktop.in:29
-msgid "Antiviral"
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:568
+msgid "What a pity!, In this machine there are viruses!"
+msgstr ""
+
+#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:575
+msgid "Congratulations!!, no viruses found"
 msgstr ""
