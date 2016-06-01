@@ -29,6 +29,7 @@ except Exception as e:
 from gi.repository import Gtk
 from gi.repository import GdkPixbuf
 from gi.repository import GObject
+from gi.repository import GLib
 import os
 import pyclamd
 import subprocess
@@ -37,6 +38,7 @@ from threading import Thread
 from configurator import Configuration
 from actions import Actions
 from progreso import Progreso
+from idleobject import IdleObject
 from comun import _
 
 
@@ -100,7 +102,7 @@ class Container():
         self.data = data
 
 
-class FolderProcessor(Thread, GObject.GObject):
+class FolderProcessor(Thread, IdleObject):
     __gsignals__ = {
         'to-process': (GObject.SIGNAL_RUN_FIRST, GObject.TYPE_NONE, (str,)),
         'processed': (GObject.SIGNAL_RUN_FIRST, GObject.TYPE_NONE, ()),
@@ -108,12 +110,15 @@ class FolderProcessor(Thread, GObject.GObject):
         }
 
     def __init__(self, model=None, ishome=False):
-        GObject.GObject.__init__(self)
+        IdleObject.__init__(self)
         Thread.__init__(self)
         self.model = model
         self.ishome = ishome
         self.daemon = True
         self.stop = False
+
+    def stop_it(self, executor):
+        self.stop = True
 
     def run(self):
         files = []
@@ -138,7 +143,7 @@ class FolderProcessor(Thread, GObject.GObject):
         self.emit('finished', Container(files))
 
 
-class Scanner(Thread, GObject.GObject):
+class Scanner(Thread, IdleObject):
     __gsignals__ = {
         'to-scan': (GObject.SIGNAL_RUN_FIRST, GObject.TYPE_NONE, (str,)),
         'scanned': (GObject.SIGNAL_RUN_FIRST, GObject.TYPE_NONE, ()),
@@ -147,14 +152,14 @@ class Scanner(Thread, GObject.GObject):
         }
 
     def __init__(self, scanner, files):
-        GObject.GObject.__init__(self)
+        IdleObject.__init__(self)
         Thread.__init__(self)
         self.files = files
         self.scanner = scanner
         self.daemon = True
         self.stop = False
 
-    def stop(self):
+    def stop_it(self, executor):
         self.stop = True
 
     def run(self):
@@ -171,9 +176,7 @@ class Scanner(Thread, GObject.GObject):
                         self.emit('infected', infectado)
                 self.emit('scanned')
                 if self.stop is True:
-                    print('=============================')
                     break
-                    return
         self.emit('finished')
 
 
@@ -405,42 +408,97 @@ class Antiviral(Gtk.Window):
         model.clear()
 
     def on_button_scan_home_clicked(self, widget):
-        GObject.idle_add(self._on_button_scan_home_clicked)
-
-    def _on_button_scan_home_clicked(self):
         fp = FolderProcessor(ishome=True)
         self.progreso_dialog = Progreso(
             _('Processing folders...'), self, 1)
+        self.progreso_dialog.connect(
+            'i-want-stop', fp.stop_it)
         fp.connect('to-process', self.on_to_process_folder)
         fp.connect('processed', self.on_processed_folder)
         fp.connect('finished', self.on_processed_folders)
         fp.start()
+        self.progreso_dialog.run()
 
     def on_button_scan_clicked(self, widget):
-        GObject.idle_add(self._on_button_scan_clicked)
-
-    def _on_button_scan_clicked(self):
         model = self.treeview.get_model()
         fp = FolderProcessor(model)
-        self.progreso_dialog = Progreso(
-            _('Processing folders...'), self, len(model))
-        fp.connect('to-process', self.on_to_process_folder)
-        fp.connect('processed', self.on_processed_folder)
-        fp.connect('finished', self.on_processed_folders)
-        fp.start()
-
-    def on_to_process_folder(self, processor, afile):
-        GObject.idle_add(self.progreso_dialog.set_scanning_file, afile)
-
-    def on_processed_folder(self, processor):
-        GObject.idle_add(self.progreso_dialog.increase)
-
-    def on_processed_folders(self, processor, container):
         if self.progreso_dialog is not None:
             self.progreso_dialog.destroy()
             self.progreso_dialog = None
+        self.progreso_dialog = Progreso(
+            _('Processing folders...'), self, len(model))
+        self.progreso_dialog.connect(
+            'i-want-stop', fp.stop_it)
+        fp.connect('to-process', self.on_to_process_folder)
+        fp.connect('processed', self.on_processed_folder)
+        fp.connect('finished', self.on_processed_folders)
+        fp.start()
+        self.progreso_dialog.run()
+
+    def on_to_process_folder(self, processor, afile):
+        # GLib.idle_add(self.progreso_dialog.set_scanning_file, afile)
+        self.progreso_dialog.set_scanning_file(afile)
+
+    def on_processed_folder(self, processor):
+        # GLib.idle_add(self.progreso_dialog.increase)
+        self.progreso_dialog.increase()
+
+    def on_processed_folders(self, processor, container):
         files = container.get_data()
-        GObject.idle_add(self.scan_files, files)
+        if len(files) > 0:
+            scanner = Scanner(self.scanner, files)
+            scanner.connect('to-scan', self.going_to_scan)
+            scanner.connect('scanned', self.on_progress)
+            scanner.connect('infected', self.on_infected_detect)
+            scanner.connect('finished', self.on_scan_finished)
+            print(2)
+            if self.progreso_dialog is not None:
+                self.progreso_dialog.destroy()
+                self.progreso_dialog = None
+            print(3)
+            self.progreso_dialog = Progreso(_('Scanning...'), self, len(files))
+            print(4)
+            self.progreso_dialog.connect(
+                'i-want-stop', scanner.stop_it)
+            print(5)
+            self.infected = []
+            print(6)
+            scanner.start()
+            self.progreso_dialog.run()
+
+    def going_to_scan(self, scanner, afile):
+        # GLib.idle_add(self.progreso_dialog.set_scanning_file, afile)
+        self.progreso_dialog.set_scanning_file(afile)
+
+    def on_progress(self, scanner):
+        # GLib.idle_add(self.progreso_dialog.increase)
+        self.progreso_dialog.increase()
+
+    def on_infected_detect(self, scanner, infected):
+        self.infected.append(infected)
+
+    def on_scan_finished(self, scanner):
+        # GLib.idle_add(self._on_scan_finished)
+        if self.progreso_dialog is not None:
+            self.progreso_dialog.destroy()
+            self.progreso_dialog = None
+        md = Gtk.MessageDialog(parent=self)
+        md.set_title('Antiviral')
+        md.set_property('message_type', Gtk.MessageType.INFO)
+        md.add_button(Gtk.STOCK_OK, Gtk.ResponseType.ACCEPT)
+        md.set_property('text', _('Antiviral'))
+        if len(self.infected) > 0:
+            md.format_secondary_text(
+                _('What a pity!, In this machine there are viruses!'))
+            md.run()
+            md.destroy()
+            actions = Actions(self, self.infected)
+            actions.run()
+            actions.destroy()
+        else:
+            md.format_secondary_text(_('Congratulations!!, no viruses found'))
+            md.run()
+            md.destroy()
 
     def on_button_update_clicked(self, widget):
         self.update_database()
@@ -518,64 +576,6 @@ this program. If not, see <http://www.gnu.org/licenses/>.
             md.destroy()
             print(self.scanner.reload())
 
-    def going_to_scan(self, scanner, afile):
-        GObject.idle_add(self.progreso_dialog.set_scanning_file, afile)
-
-    def on_progress(self, scanner):
-        GObject.idle_add(self.progreso_dialog.increase)
-
-    def on_infected_detect(self, scanner, infected):
-        self.infected.append(infected)
-
-    def scan_files(self, files):
-        print(1)
-        scanner = Scanner(self.scanner, files)
-        scanner.connect('to-scan', self.going_to_scan)
-        scanner.connect('scanned', self.on_progress)
-        scanner.connect('infected', self.on_infected_detect)
-        scanner.connect('finished', self.on_scan_finished)
-        print(2)
-        if self.progreso_dialog is not None:
-            self.progreso_dialog.destroy()
-            self.progreso_dialog = None
-        print(3)
-        GObject.idle_add(self._scan_files, scanner, files)
-
-    def _scan_files(self, scanner, files):
-            self.progreso_dialog = Progreso(_('Scanning...'), self, len(files))
-            print(4)
-            self.progreso_dialog.connect(
-                'i-want-stop', lambda x: scanner.stop())
-            print(5)
-            self.infected = []
-            print(6)
-            scanner.start()
-
-    def on_scan_finished(self, scanner):
-        GObject.idle_add(self._on_scan_finished)
-
-    def _on_scan_finished(self):
-        if self.progreso_dialog is not None:
-            self.progreso_dialog.destroy()
-            self.progreso_dialog = None
-        md = Gtk.MessageDialog(parent=self)
-        md.set_title('Antiviral')
-        md.set_property('message_type', Gtk.MessageType.INFO)
-        md.add_button(Gtk.STOCK_OK, Gtk.ResponseType.ACCEPT)
-        md.set_property('text', _('Antiviral'))
-        if len(self.infected) > 0:
-            md.format_secondary_text(
-                _('What a pity!, In this machine there are viruses!'))
-            md.run()
-            md.destroy()
-            actions = Actions(self, self.infected)
-            actions.run()
-            actions.destroy()
-        else:
-            md.format_secondary_text(_('Congratulations!!, no viruses found'))
-            md.run()
-            md.destroy()
-
 
 def main():
     print(pyclamav.version())
@@ -588,7 +588,7 @@ def main():
             print(file + " -> OK")
         else:
             print(file + " -> Infected!!!! "+ret[1])
-    return 0
+    return 00
 
 if __name__ == '__main__':
     GObject.threads_init()

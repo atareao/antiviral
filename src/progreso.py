@@ -28,9 +28,10 @@ except Exception as e:
     exit(1)
 from gi.repository import Gtk
 from gi.repository import GObject
+import threading
 
 
-class Progreso(Gtk.Dialog):
+class Progreso(Gtk.Dialog, threading.Thread):
     __gsignals__ = {
         'i-want-stop': (GObject.SIGNAL_RUN_FIRST, GObject.TYPE_NONE, ()),
     }
@@ -48,24 +49,32 @@ class Progreso(Gtk.Dialog):
         #
         frame1 = Gtk.Frame()
         vbox.pack_start(frame1, True, True, 0)
-        vbox1 = Gtk.VBox(spacing=5)
-        vbox1.set_border_width(5)
-        frame1.add(vbox1)
+        table = Gtk.Table(2, 2, False)
+        frame1.add(table)
         #
         self.label = Gtk.Label()
-        vbox1.pack_start(self.label, True, True, 0)
+        table.attach(self.label, 0, 2, 0, 1,
+                     xpadding=5,
+                     ypadding=5,
+                     xoptions=Gtk.AttachOptions.SHRINK,
+                     yoptions=Gtk.AttachOptions.EXPAND)
         #
         self.progressbar = Gtk.ProgressBar()
-        vbox1.pack_start(self.progressbar, True, True, 0)
-        #
-        hbox = Gtk.HBox()
-        vbox.pack_start(hbox, False, False, 0)
+        self.progressbar.set_size_request(300, 0)
+        table.attach(self.progressbar, 0, 1, 1, 2,
+                     xpadding=5,
+                     ypadding=5,
+                     xoptions=Gtk.AttachOptions.SHRINK,
+                     yoptions=Gtk.AttachOptions.EXPAND)
         button_stop = Gtk.Button()
         button_stop.set_size_request(40, 40)
         button_stop.set_image(
             Gtk.Image.new_from_stock(Gtk.STOCK_STOP, Gtk.IconSize.BUTTON))
         button_stop.connect('clicked', self.on_button_stop_clicked)
-        hbox.pack_end(button_stop, False, False, 0)
+        table.attach(button_stop, 1, 2, 1, 2,
+                     xpadding=5,
+                     ypadding=5,
+                     xoptions=Gtk.AttachOptions.SHRINK)
         self.stop = False
         self.show_all()
         self.max_value = max_value
@@ -75,7 +84,6 @@ class Progreso(Gtk.Dialog):
         return self.stop
 
     def on_button_stop_clicked(self, widget):
-        print('button pressed')
         self.stop = True
         self.emit('i-want-stop')
 
