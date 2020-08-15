@@ -6,142 +6,130 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: antiviral 0.0.9\n"
-"Report-Msgid-Bugs-To: lorenzo.carbonell.cerezo@gmail.com\n"
-"POT-Creation-Date: 2016-05-29 22:08+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-15 07:44+0200\n"
 "PO-Revision-Date: 2012-08-27 17:17+0000\n"
 "Last-Translator: Fox <younfox@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "X-Generator: Launchpad (build 16640)\n"
 "X-Launchpad-Export-Date: 2013-05-26 09:04+0000\n"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:76
+#: src/actions.py:76
 msgid "Del."
 msgstr "Törlés"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:81
+#: src/actions.py:81
 msgid "Qua."
 msgstr "Karantén"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:85
+#: src/actions.py:85
 msgid "File"
 msgstr "Fájl"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:87
+#: src/actions.py:87
 msgid "Virus"
 msgstr "Vírus"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:94
+#: src/actions.py:94
 msgid "Execute"
 msgstr "Végrehajtás"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/actions.py:144
+#: src/actions.py:144
 msgid "There is a file like this in quarentine, remove this new file?"
-msgstr ""
-"Egy ehhez hasonló fájl van a karanténban, eltávolítja ezt az új fájlt?"
+msgstr "Egy ehhez hasonló fájl van a karanténban, eltávolítja ezt az új fájlt?"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:184
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:478
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:565
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:12
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:13
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:14
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:15
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:16
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:17
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:18
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:19
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:20
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:21
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:22
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:23
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:24
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:25
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:26
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:27
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:28
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/antiviral.desktop.in:29
+#: src/antiviral.py:190 src/antiviral.py:492 src/antiviral.py:539
 msgid "Antiviral"
 msgstr "Antiviral"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:216
+#: src/antiviral.py:222
 msgid "ClamAV version"
 msgstr "ClamAV verzió"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:231
+#: src/antiviral.py:237
 #, fuzzy
 msgid "Scan home"
 msgstr "Vizsgálat"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:233
+#: src/antiviral.py:239
 msgid "Scan home now"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:238
+#: src/antiviral.py:244
 #, fuzzy
 msgid "Scan folders"
 msgstr "Minden mappa eltávolítása"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:240
+#: src/antiviral.py:246
 msgid "Scan selected folders now"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:245
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:247
+#: src/antiviral.py:251 src/antiviral.py:253
 msgid "Exit"
 msgstr "Kilépés"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:252
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:254
+#: src/antiviral.py:258 src/antiviral.py:260
 msgid "About"
 msgstr "Névjegy"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:259
+#: src/antiviral.py:265
 msgid "Update"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:261
+#: src/antiviral.py:267
 msgid "Update virus database"
 msgstr "Vírusadatbázis frissítése"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:277
+#: src/antiviral.py:283
 msgid "Scan"
 msgstr "Vizsgálat"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:282
+#: src/antiviral.py:288
 msgid "Rec."
 msgstr "Felvétel"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:287
+#: src/antiviral.py:293
 msgid "Folder"
 msgstr "Mappa"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:295
+#: src/antiviral.py:301
 msgid "Add new folder"
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:302
+#: src/antiviral.py:308
 #, fuzzy
 msgid "Remove selected folder"
 msgstr "Minden mappa eltávolítása"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:309
+#: src/antiviral.py:315
 msgid "Remove all folders"
 msgstr "Minden mappa eltávolítása"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:371
+#: src/antiviral.py:377
 msgid "Select Folder..."
 msgstr "Mappa kiválasztása…"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:413
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:426
+#: src/antiviral.py:416 src/antiviral.py:432
 msgid "Processing folders..."
 msgstr ""
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:456
+#: src/antiviral.py:462
+msgid "Scanning..."
+msgstr "Vizsgálat…"
+
+#: src/antiviral.py:495
+msgid "What a pity!, In this machine there are viruses!"
+msgstr "Milyen kár! Ezen a gépen vírusok vannak!"
+
+#: src/antiviral.py:502
+msgid "Congratulations!!, no viruses found"
+msgstr "Gratulálunk!! Nincs vírus találat."
+
+#: src/antiviral.py:517
 msgid ""
 "A graphical interface for\n"
 "ClamAV"
@@ -149,45 +137,33 @@ msgstr ""
 "Egy grafikus felület ehhez\n"
 "ClamAV"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:492
+#: src/antiviral.py:553
 msgid "main is up to date\n"
 msgstr "a fő naprakész\n"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:494
+#: src/antiviral.py:555
 msgid "main updated\n"
 msgstr "fő frissítve\n"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:497
+#: src/antiviral.py:558
 msgid "daily is up to date\n"
 msgstr "a napi naprakész\n"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:499
+#: src/antiviral.py:560
 msgid "daily updated\n"
 msgstr "napi frissítve\n"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:502
+#: src/antiviral.py:563
 msgid "bytecode is up to date\n"
 msgstr "a bytecode naprakész\n"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:504
+#: src/antiviral.py:565
 msgid "bytecode updated\n"
 msgstr "bytecode frissítve\n"
 
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:514
+#: src/antiviral.py:575
 msgid "Reloading"
 msgstr ""
-
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:545
-msgid "Scanning..."
-msgstr "Vizsgálat…"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:568
-msgid "What a pity!, In this machine there are viruses!"
-msgstr "Milyen kár! Ezen a gépen vírusok vannak!"
-
-#: /home/lorenzo/CloudStation/Programacion/Python/current/antiviral/src/antiviral.py:575
-msgid "Congratulations!!, no viruses found"
-msgstr "Gratulálunk!! Nincs vírus találat."
 
 #~ msgid "Add"
 #~ msgstr "Hozzáadás"
@@ -197,30 +173,40 @@ msgstr "Gratulálunk!! Nincs vírus találat."
 
 #~ msgid ""
 #~ "This program is free software: you can redistribute it and/or modify it\n"
-#~ "\t\tunder the terms of the GNU General Public License as published by the\n"
-#~ "\t\tFree Software Foundation, either version 3 of the License, or (at your option)\n"
+#~ "\t\tunder the terms of the GNU General Public License as published by "
+#~ "the\n"
+#~ "\t\tFree Software Foundation, either version 3 of the License, or (at "
+#~ "your option)\n"
 #~ "\t\tany later version.\n"
 #~ "\n"
 #~ "\t\tThis program is distributed in the hope that it will be useful, but\n"
-#~ "\t\tWITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY\n"
-#~ "\t\tor FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for\n"
+#~ "\t\tWITHOUT ANY WARRANTY; without even the implied warranty of "
+#~ "MERCHANTABILITY\n"
+#~ "\t\tor FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public "
+#~ "License for\n"
 #~ "\t\tmore details.\n"
 #~ "\n"
-#~ "\t\tYou should have received a copy of the GNU General Public License along with\n"
+#~ "\t\tYou should have received a copy of the GNU General Public License "
+#~ "along with\n"
 #~ "\t\tthis program.  If not, see <http://www.gnu.org/licenses/>."
 #~ msgstr ""
-#~ "Ez a program egy ingyenes szoftver: terjesztheti és/vagy változtathatja szabadon\n"
+#~ "Ez a program egy ingyenes szoftver: terjesztheti és/vagy változtathatja "
+#~ "szabadon\n"
 #~ "\t\ta GNU General Public License értelmében közzétette a\n"
-#~ "\t\ta Free Software Foundation, akármelyik 3-as verziójú licenc, vagy (ha úgy gondolja)\n"
+#~ "\t\ta Free Software Foundation, akármelyik 3-as verziójú licenc, vagy (ha "
+#~ "úgy gondolja)\n"
 #~ "\t\tbármelyik későbbi verzió alapján.\n"
 #~ "\n"
 #~ "\t\tEz a program a hasznosság reményében terjesztett, de\n"
 #~ "\t\tMINDENNEMŰ GARANCIA NÉLKÜL, anélkül, hogy akár a piacképességnek\n"
-#~ "\t\tvagy az egyéni elképzeléseknek megfeleljen. Ismerje meg a GNU General Public License engedélyt\n"
+#~ "\t\tvagy az egyéni elképzeléseknek megfeleljen. Ismerje meg a GNU General "
+#~ "Public License engedélyt\n"
 #~ "\t\ttovábbi információkért.\n"
 #~ "\n"
-#~ "\t\tEgy másolathoz kellett jutnia a GNU General Public License engedélyről\n"
-#~ "\t\tezzel a programmal. Ha nem, keresse fel <http://www.gnu.org/licenses/>."
+#~ "\t\tEgy másolathoz kellett jutnia a GNU General Public License "
+#~ "engedélyről\n"
+#~ "\t\tezzel a programmal. Ha nem, keresse fel <http://www.gnu.org/licenses/"
+#~ ">."
 
 #~ msgid "LibClamAV version"
 #~ msgstr "LibClamAV verzió"
